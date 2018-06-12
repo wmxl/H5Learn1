@@ -1,0 +1,14 @@
+#mydiv{
+    color: aqua;
+}
+/*p i{*/
+    /*color: deeppink;*/
+/*}*/
+p>strong>i{
+    color: red;
+    font-size: 30px;
+}
+li+li{
+    font-size: 50px;
+    color: darkgoldenrod;
+}

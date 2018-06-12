@@ -1,0 +1,42 @@
+body{
+    margin: 0;
+}
+.container{
+    margin: 100px;
+   
+}
+.bd{
+    border-style: dotted;
+    background-color: green; 
+}
+.pd{
+   padding: 10px;
+   background-color: red;
+
+}
+.content{
+	
+    background-color: blue;
+}
+.container1{
+    
+}
+.bd1{
+
+    
+}
+.pd1{
+    
+}
+.content1{
+	margin: 50px;
+	padding: 10px;
+	border-style: dotted;
+    background-color: red;
+    background-color: blue;
+
+}
+td{
+	padding: 30px;	
+	margin: 1130px;
+}

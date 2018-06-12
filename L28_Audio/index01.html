@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <video src="12.ogg" controls="controls">buzhichi</video>
+    <p>----------------------------------------------------------</p>
+
+    <button onclick="clickV()">Play/Pause</button>
+    <button onclick="clickBig()">Big</button>
+    <button onclick="clickSmall()">Small</button>
+    <video id="video" src="Vbuy20150606_075754.ogg" >buzhichi</video>
+    <script>
+        var v = document.getElementById("video");
+        function clickV(){
+            if(v.paused){
+                v.play();
+            }else{
+                v.pause;
+            }
+        }
+        function clickBig(){
+            v.width = 800;
+            v.height = 800;
+        }
+        function clickSmall(){
+            v.width = 300;
+            v.height = 300;
+        }
+
+    </script>
+</body>
+</html>

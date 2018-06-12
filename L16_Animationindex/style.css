@@ -1,0 +1,29 @@
+div{
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+}
+/*.div2{*/
+    /*transform: translate(100px, 100px);*/
+    /*!*-webkit-transform: translate(100px, 100px);!*safari chrome*!*!*/
+    /*!*-ms-transform: translate(100px, 100px);!*IE*!*!*/
+    /*!*-o-transform: translate(100px, 100px);!*opera*!*!*/
+    /*!*-moz-transform: translate(100px, 100px);!*Firefox*!*!*/
+/*!*}*!*/
+/*.div2{*/
+    /*transform: rotate(200deg);*/
+
+/*}*/
+/*.div2{*/
+    /*margin-top: 100px;*/
+    /*transform: scale(1,2);*/
+/*}*/
+/*.div2{*/
+    /*transform: skew(10deg, 10deg);*/
+/*}*/
+.div2{
+    transform: rotateX(50deg);
+}
+.div2{
+    transform: rotateY(50deg);
+}

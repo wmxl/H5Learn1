@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>DOCObject</title>
+	<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body>
+
+	<div id="div1">
+		<img id="mid" src="6.jpg" > 	
+	</div>
+	<button onclick="changeImg()">changeImg</button>
+	<button onclick="smallImg()">smallImg</button>
+	<button onclick="changeColor()">changeColor</button>
+	
+	
+	<p id="pid">hello</p>
+	<button id="btn">btn</button>
+	<script>
+		var x = document.getElementById("btn");
+		x.addEventListener("click", hello); //句柄 
+		x.addEventListener("click", world);
+		x.removeEventListener("click", world);//移除句柄
+
+		function hello() {
+			alert("Hello");
+		}
+		function world() {
+			alert("World");
+		}
+		
+		function changeColor() {
+			document.getElementById("div1").style.background = "blue";
+		}
+		function changeImg() {
+			var src = document.getElementById("mid").src;
+			//alert(src);
+			if(src=="http://localhost:8090/h5%E5%B7%A5%E7%A8%8B/L22_DOCObj/6.jpg")
+				document.getElementById("mid").src="7.jpg";	
+			else
+				document.getElementById("mid").src="6.jpg";	
+		}
+
+		function smallImg() {
+			var v = document.getElementById("mid");
+			var d = document.getElementById("div1");
+			
+			if(v.naturalHeight > v.naturalWidth){
+				v.height = d.offsetHeight;
+				v.width =  (v.naturalWidth/v.naturalHeight)*v.height;//这段可以不要？
+			}
+			else{
+				v.width = d.offsetWidth;
+				v.height =  (v.naturalHeight/v.naturalWidth)*v.width;//这段可以不要？
+			}
+		}
+	</script> 
+</body>
+</html>

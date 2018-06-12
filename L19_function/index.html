@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+    <p id="pid"></p>
+    <script>
+        function test(name, age) {
+            alert("Hello:"+name+",我的年龄是："+age);
+        }
+        function demo(a,b){
+            if(a>b){
+                return "a>b";
+            }else{
+                return "a<=b";
+            }
+        }
+        document.getElementById("pid").innerHTML=demo(122,24);
+        function d(){
+            alert("我会执行吗？");
+            return "hello";
+        }
+        var v1 = d()+"iwen";
+        var v2 = d()+"iwe";
+        alert(v1);
+        alert(v2);
+    </script>
+
+    <button onclick="demo(23, 20)">按钮</button>
+</body>
+</html>

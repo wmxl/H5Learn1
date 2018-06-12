@@ -1,0 +1,17 @@
+update swer.com set detail = '北京市' where code = '11000'
+update swer.com set detail = '北京市' where code = '11000'
+update swer.com set detail = '北京市' where code = '11000'
+update swer.com set detail = '北京市' where code = '11000'
+update swer.com set detail = '北京市' where code = '11000'
+update swer.com set detail = '北京市' where code = '11000'
+update swer.com set detail = '北京市' where code = '11000'
+update swer.com set detail = '北京市' where code = '11000'
+update swer.com set detail = '北京市' where code = '11000'
+update swer.com set detail = '北京市' where code = '11000'
+update swer.com set detail = '北京市' where code = '11000'
+
+
+
+(^insert .+\) values\()('\d+'),('\d+'),('\S+')
+
+update swer.com set detail = $4 where code = $3

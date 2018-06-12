@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>String</title>
+</head>
+<body>
+	<script type="">
+		var str = "Hello World";
+		document.write("字符串的长度：" + str.length + "<br>");
+		document.write(str.indexOf("World"));
+		document.write("<br>");
+		document.write(str.indexOf("Hello"));
+		document.write("<br>");
+		document.write(str.indexOf(" "));
+		document.write("<br>");
+		document.write(str.indexOf("  "));
+		document.write("<br>");
+		document.write(str.indexOf("o"));
+		document.write("<br>");
+		document.write(str.match("ello"));
+		document.write("<br>");
+		document.write(str.match("xello"));
+		document.write("<br>");
+		var s = str.replace("World","jikexueyuan")
+		document.write(s);
+		s =str.toUpperCase();
+		document.write("<br>");
+		document.write(s);
+		s =str.toLowerCase();
+		document.write("<br>");
+		document.write(s);
+		document.write("<br>");
+
+		var str1 = "hello,jike,xueyuan";
+		s = str1.split(",");
+		document.write(s[0]);
+	</script>
+	
+</body>
+</html>

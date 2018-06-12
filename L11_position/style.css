@@ -1,0 +1,17 @@
+#position1{
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    position:  relative;
+    left: 20px;
+    top: 20px;
+    z-index: 3;//越大越在上面
+}#position2{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: relative;
+    left: 10px;
+    top: 10px;
+    z-index: 1;
+}

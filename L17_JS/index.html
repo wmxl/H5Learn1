@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        // document.write("sdfsdf");
+    </script>
+</head>
+<body>
+	<p>i = 10, j = 10; i+j=? </p>
+	<p id="sumid" ></p>
+	<button onclick="mysum()">Result</button>
+
+	<script>
+		
+		var i = "10";
+		var j = 10;
+
+		document.write(i == j);
+		
+
+		document.write("标签1");
+        document.write("<h1>标签1</h1>");
+        
+
+		function mysum(){
+			var i = 10;
+        	var j = 10;
+        	var m = i + j;
+        	document.getElementById("sumid").innerHTML=m;
+		}
+
+		var a = [1,2,3,4,5,6];
+		document.write(a);
+		for(var j = 0; j < 6; j++){
+			document.write(a[j] + " ");
+		}
+
+    </script>
+</body>
+</html>

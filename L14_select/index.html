@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>选择器</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <style>
+        [title]{
+            color:aquamarine;
+
+            font-size: 100px;
+        }
+        [title~="title"]{
+            font-size: 40px;
+        }
+        [href="http://www.jikexueyuan.com"]{
+            font-size: 30px;
+        }
+    </style>
+</head>
+        <p title="t">hello</p >
+        <p title="title">hello</p >
+        <p title="tit hello">hello</p >
+        <p title="title hello">hello</p >
+        <p title="hello title hello">hello</p >
+        <p title="hellotitle">hello</p >
+        <a href="http://www.jikexueyuan.com">计科学院</a>
+        <a href="http://www.baidu.com">ba</a>
+        <!--<p> this is my <strong><i>hello</i></strong> page</p>-->
+
+        <p>this is my <strong><i>hello</i></strong> web page</p>
+        <div>
+            <ul>
+                <li>item1</li>
+                <li>item2</li>
+                <li>item3</li>
+            </ul>
+            <ol>
+                <li>item3</li>
+                <li>item4</li>
+                <li>item6</li>
+            </ol>
+        </div>
+        
+        <p title="">hello</p>
+
+       
+
+</body>
+</html>

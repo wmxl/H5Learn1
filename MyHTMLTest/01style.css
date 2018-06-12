@@ -1,0 +1,55 @@
+#d{
+	border: solid;
+	width: 200px;
+	height: 400px;
+}
+#d1{
+	width: 200px;
+	height: 20px;
+	background-color: #ff0000;
+}
+#d2{
+	width: 200px;
+	height: 20px;
+	background-color: #00ff00;
+}
+#d3{
+	width: 200px;
+	height: 20px;
+	background-color: #0000ff;
+}
+#d4{
+	width: 200px;
+	height: 20px;
+	background-color: #ffff00;
+}
+#d5{
+	width: 200px;
+	height: 20px;
+	background-color: #00ffff;
+}
+#d6{
+	width: 200px;
+	height: 20px;
+	background-color: #ff00ff;
+}
+#d7{
+	width: 200px;
+	height: 20px;
+	background-color: #ffffff;
+}
+#d8{
+	width: 200px;
+	height: 20px;
+	background-color: #000000;
+}
+
+#l6{
+	width: 200px;
+	height: 200px;
+	margin: 20px 20px;
+	background-color: pink;
+}
+#l6:hover{
+	box-shadow: 10px 10px 5px #888888;
+}

@@ -1,0 +1,15 @@
+div{
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+    position: relative;
+    animation: anim 4s infinite alternate; /*不加alternate就是正方向*/
+
+}
+@keyframes anim{
+    0%{background-color: yellow; left: 0; top: 0; }
+    25%{background-color: green; left: 200px; top: 0; }
+    50%{background-color: blue; left: 200px; top: 200px; }
+    75%{background-color: blueviolet; left: 0px; top: 200px; }
+    100%{background-color: yellow; left: 0px; top: 0px; }
+}

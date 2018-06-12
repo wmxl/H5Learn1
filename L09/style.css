@@ -1,0 +1,22 @@
+#p1{
+	width:54px;
+	background-color: red;
+}
+#p2{
+	
+	text-shadow: 5px 5px 3px #FF0000;
+}
+a:link{
+	color: #FF0000; 
+	text-decoration: none;
+	background-color: aquamarine;
+}
+a:visited{
+	color: #00FF00;	
+}
+a:hover{
+	color: #0000FF;
+}
+a:active{
+	color: #FF00ff;
+}

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <!--<audio src="1.mp3" controls="controls">buzhichi</audio>-->
+
+    <button onclick="clickA()">Play/Pause</button>
+    <audio id="audio" src="1.mp3" >buzhichi</audio>
+    <script>
+        var a = document.getElementById("audio");
+        function clickA(){
+            if(a.paused){
+                a.play();
+            }else{
+                a.pause();
+            }
+        }
+    </script>
+</body>
+</html>

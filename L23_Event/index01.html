@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Event</title>
+</head>
+<body>
+	<div id="div">
+		<button id="btn1">BTN</button> 
+		<a id="aid" href="http://www.baidu.com">baidu</a>
+	</div>
+	<!-- <script>
+		var btn1 = document.getElementById('btn1');
+		btn1.onclick = function () {
+			alert("Hello DOM0级处理事件程序1");//被覆盖
+		};
+		btn1.onclick = function () {
+			alert("Hello DOM0级处理事件程序2");//被覆盖
+		};
+		btn1.onclick = function () {
+			alert("Hello DOM0级处理事件程序3");
+		};
+	</script> -->
+	<!-- <script>
+		var btn1 = document.getElementById('btn1');
+		btn1.addEventListener("click", demo1);
+		btn1.addEventListener("click", demo2);
+		btn1.addEventListener("click", demo3);//2级不会被覆盖
+		function demo1() {
+			alert("Hello DOM2级处理事件程序1");
+		}
+		function demo2() {
+			alert("Hello DOM2级处理事件程序2");
+		}
+		function demo3() {
+			alert("Hello DOM2级处理事件程序3");
+		}
+		btn1.removeEventListener("click",demo2);
+	</script> -->
+	<script>
+		document.getElementById("btn1").addEventListener("click", showType);
+		document.getElementById("div").addEventListener("click", showDiv);
+		document.getElementById("aid").addEventListener("click", showA);
+		function showType(event) {
+			// alert(event.type);
+			alert(event.target);
+			event.stopPropagation();//组织事件冒泡
+		}
+		function showDiv() {
+			alert("DIV");
+		}
+		function showA() {
+			// event.stopPropagation();
+			event.preventDefault();
+		}
+	</script>
+</body>
+</html>
