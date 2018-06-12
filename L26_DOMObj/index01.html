@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<p name="pn">Hello</p>
+	<p name="pn">Hello</p>
+	<p name="pn">Hello</p>
+	<p name="pn">Hello</p>
+	<a id="aid" title="得到了a标签的属性" href="http://www.baidu.com">hello</a>
+	<a id="aid2" href="http://www.baidu.com">aid2</a>
+
+	<ul><li></li><li></li><li></li></ul>
+	
+	<div id="div">
+		<p id="pid">div的p元素</p>
+	</div>
+		
+	
+	<script>
+		function getName() {
+			var count = document.getElementsByName("pn");
+			alert(count.length);
+			var p = count[0];
+			p.innerHTML = "world"
+			var p = count[2];
+			p.innerHTML = "world3333"
+		}
+		function getAttr() {
+			var anode = document.getElementById('aid');
+			var attr = anode.getAttribute("title");
+			alert(attr);
+		}
+		function setAttr() {
+			var anode = document.getElementById('aid2');
+			anode.setAttribute("title","动态设置a的title属性");
+			var attr = anode.getAttribute("title");
+			alert(attr);
+		}
+		function getChildNode() {
+			var childnode = document.getElementsByTagName("ul")[0].childNodes;
+			alert(childnode.length);
+			alert(childnode[0].nodeType);
+		}
+
+		function getParentNode() {
+			var p = document.getElementById("pid");
+			alert(p.parentNode.nodeName);
+		}
+
+		function createNode() {
+			var body = document.body;
+			var input = document.createElement("input");
+			input.type = "button";
+			input.value = "BTN"
+			body.appendChild(input);
+		}
+
+		function addNode() {
+			var div = document.getElementById("div");
+			var node = document.getElementById("pid");
+			var newnode = document.createElement("p");
+			newnode.innerHTML = "动态添加一个p元素";
+			div.insertBefore(newnode, node);
+		}
+
+		function removeNode() {
+			var div = document.getElementById("div");
+			var p = div.removeChild(div.childNodes[1]);
+		}
+		removeNode()
+
+		function getSize() {
+			var width = document.documentElement.offsetWidth||document.body.documentElement.offsetWidth;//为了兼容性
+			var height = document.documentElement.offsetHeight;
+			alert(width + "," + height);
+			var width = document.documentElement.scrollWidth||document.body.documentElement.scrollWidth;//为了兼容性
+			var height = document.documentElement.scrollHeight;
+			alert(width + "," + height);
+		}
+
+		getSize()
+ 
+	</script>
+</body>
+</html>

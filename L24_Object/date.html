@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Date</title>
+</head>
+
+<body onload="startTime()">
+	<script>
+		// var date = new Date();
+		// document.write(date);
+		// document.write(date.getFullYear());
+		// document.write(date.getTime());//获取毫秒
+		// date.setFullYear(2010,1,1);//设定日期
+		// document.write(date);
+		// //时钟
+		function startTime() {
+			var today = new Date();
+			var h = today.getHours();
+			var m = today.getMinutes();
+			var s = today.getSeconds();
+			m = checkTime(m);
+			s = checkTime(s);
+			document.getElementById('timetxt').innerHTML = h+ ":" + m + ":" + s;
+			t = setTimeout(function(){
+				startTime();
+			},2000);
+		}
+		function checkTime(i) {
+			if(i<10){ 
+				i = "0" + i;
+			}
+			return i;
+		}
+	</script>
+	<div id="timetxt"></div>
+</body>
+</html>
