@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>OBDemo</title>
+</head>
+<body>
+	<div>
+		<button id="btn" onclick="myWin()">BTN</button>
+	</div>
+	<p id="ptime"></p>
+	<script>
+		// window.document.write("width:"+window.innerWidth+ "height:"+window.innerHeight);//不包含滚动条
+		// function btnClicked()
+		// {
+		// 	// window.open("obindex.html","windowname","height=200,width=200,top=100,left=100, toolbar=yes, menubar=yes");
+		// 	window.close();
+		// }
+
+		// var mytime = setInterval(function(){
+		// 	 getTime();
+		// },1000);
+		// function getTime() {
+		// 	var d = new Date();
+		// 	var t = d.toLocaleTimeString();
+		// 	document.getElementById('ptime').innerHTML = t;
+		// }
+		// function stopTime() {
+		// 	clearInterval(mytime);
+		// }
+		var win;
+		function myWin() {
+			alert("hell");
+			win = setTimeout(function() {
+				myWin()
+			},3000);
+		}
+	</script>	
+</body>
+</html>
