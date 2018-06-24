@@ -1,4 +1,4 @@
-
+ 
 var imgContainer, msgDiv;
 
 window.onload = function(){
@@ -30,3 +30,6 @@ function showObj(obj){
 	}
 	msgDiv.innerHTML = s;
 }
+
+
+

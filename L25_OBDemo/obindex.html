@@ -5,11 +5,29 @@
 	<title>obindex</title>
 </head>
 <body>
-	<button id="btn" onclick="goTest()">BTNNNN</button>
+	
 	<script>
-		function goTest(){
+		function back(){
 			history.back();
 		}
 	</script>
+	<button id="btn" onclick="back()">back to history</button>
+	<form>
+		<input type="text" id="username">
+	</form>
+	
+	<button id="btn1" onclick="safe()">登录</button>	
+	
+	<script>
+		function safe() {
+			var name = document.getElementById('username').value;
+			if(name == "hello"){
+				// history.go(-1);
+				history.go(-1);
+			}else{
+				alert("输入错误")
+			}
+		}
+	</script>
 </body>
-</html>
+</html> 

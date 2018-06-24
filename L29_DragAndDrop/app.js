@@ -12,7 +12,7 @@ window.onload = function(){
 	// } 
 	box1Div.ondragover = function(e){
 		e.preventDefault();
-	}
+	} 
 	box2Div.ondragover = function(e){
 		e.preventDefault();
 	}

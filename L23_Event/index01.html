@@ -7,7 +7,10 @@
 <body>
 	<div id="div">
 		<button id="btn1">BTN</button> 
-		<a id="aid" href="http://www.baidu.com">baidu</a>
+		<a id="aid" href="#">baidu</a>
+	</div>
+	<div id="div1" style="background-color:red; width:30px; height;30px;">
+		sdfs
 	</div>
 	<!-- <script>
 		var btn1 = document.getElementById('btn1');
@@ -52,6 +55,10 @@
 		function showA() {
 			// event.stopPropagation();
 			event.preventDefault();
+		}
+		document.getElementById("div1").onclick=demo;
+		function demo() {
+			alert("demo")
 		}
 	</script>
 </body>
